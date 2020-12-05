@@ -19,32 +19,35 @@
   </head>
   <body>
     <div id="eyes">
-      <img class="eyes" id="eyel" src="./images/eye.svg"></img>
-      <img class="eyes" id="eyer" src="./images/eye.svg"></img>
+      <img class="eyes" id="eyel" src="./images/svgs/eye(17).svg"></img>
+      <img class="eyes" id="eyer" src="./images/svgs/eye(17).svg"></img>
     </div>
 
     <script>
+      const img = document.querySelector(".eyes");
+
       var tl = gsap.timeline();
-      
+/*
 
-      function blinkRight()  {
-        tl.to("#eyer", {duration: 0.5, src: "./images/blink.svg"})
-          .to("#eyer", {duration: 0.5, src: "./images/eye.svg"});
-      }
+      var temp = "tl.to('.eyes', {duration: 0.6, src: './images/svgs/Asset 17.svg'})";
 
-      function blinkLeft()  {
-        tl.to("#eyel", {duration: 0.5, src: "./images/blink.svg"})
-          .to("#eyel", {duration: 0.5, src: "./images/eye.svg"});
-      }
+        for (var i = 16; i > 0; i--)  {
+          temp += `.to('.eyes', {duration: 0.6, src: "./images/svgs/Asset ${i}.svg})`;
+        }
 
-      function blinkBoth()  {
-        tl.to(".eyes", {duration: 0.5, src: "./images/blink.svg"})
-          .to(".eyes", {duration: 0.5, src: "./images/eye.svg"});
-      }
+        console.log(temp);
+        eval(temp);
+*/
 
-      blinkLeft();
-      blinkRight();
-      blinkBoth();
+      temp = "tl.to('.eyes', {duration: 0.6, src: './images/svgs/eye(1)svg'})";
+
+        for (var i = 1; i < 10; i++)  {
+          temp += `.to('.eyes', {duration: 0.6, src: './images/svgs/eye(${i}).svg'})`;
+        }
+      temp += ";"
+
+      console.log(temp);
+      eval(temp);
     </script>
   </body>
 </html>
