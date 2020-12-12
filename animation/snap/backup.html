@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="snap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <style>
+      #eyes  { display: flex;
+        justify-content: space-around;
+      }
+
+      #smile  {
+        padding-left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="eyes">
+      <img class="eyes" id="eyel" src="./images/eye/eye_17.png"></img>
+      <img class="eyes" id="eyer" src="./images/eye/eye_17.png"></img>
+    </div>
+
+    <script>
+      const eyel = document.querySelector("#eyel");
+      const eyer = document.querySelector("#eyer");
+
+      const sleep = (milliseconds) =>  {
+        return new Promise(resolve => setTimeout(resolve, milliseconds));
+      }
+
+      async function movement()  {
+        for (var i = 16; i >= 0; i--)  {
+          eyel.src = `./images/eye/eye_${i}.png`;
+          await sleep(50);
+          eyer.src = `./images/eye/eye_${i}.png`;
+        }
+
+
+        for (var i = 0; i < 44; i++)  {
+          eyel.src = `./images/eye/eye_${i}.png`;
+          await sleep(50);
+          eyer.src = `./images/eye/eye_${i}.png`;
+        }
+      }
+
+
+      movement();
+
+
+    </script>
+  </body>
+</html>
