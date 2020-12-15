@@ -7,9 +7,5 @@
 4. `npm start`- to run the app
 
 
-### Todo
 
-1. square eyes
-2. eyebrows
-3. animation while speaking
 
