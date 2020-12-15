@@ -3,7 +3,7 @@
 
 A respository which contains files and code to show the emotions of robot onto the display 
 
-###Dependencies
+### Dependencies
 
     npm - Node package Manager 
 ### Instructions
