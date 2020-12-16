@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>SVG Animation</title>
-	<style >
-		svg{
-			width: 430px;
-			margin: 7% 10%;
-			overflow: visible;
-		}
-		body{
-			background: #000000;
-		}
-		#angry,#sad,#happy,#blink{
-			display: none;
-		}
-		#NormalFace,#AngryFace,#SadFace,#HappyFace{
-			fill: #BEE5E9;
-		}
-	</style>
+    <meta charset="utf-8">
+    <title>SVG Animation</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
+
 <body>
 
-<div>
+    <div>
 
-		<!--Normal Face-->
+        <!--Normal Face-->
 
-<svg  viewBox="0 0 595.28 841.89" fill="none"  xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 595.28 841.89" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="NormalFace">
 <path id="lefteye" d="M357 287C357 260.49 378.49 239 405 239H519C545.51 239 567 260.49 567 287V409C567 435.51 545.51 457 519 457H405C378.49 457 357 435.51 357 409V287Z"/>
 <path id="righteye" d="M914 287C914 260.49 935.49 239 962 239H1076C1102.51 239 1124 260.49 1124 287V409C1124 435.51 1102.51 457 1076 457H962C935.49 457 914 435.51 914 409V287Z" />
@@ -36,21 +23,20 @@
 </g>
 </svg>
 
-	<!--Angry Face-->
+        <!--Angry Face-->
+        <svg viewBox="0 0 595.28 841.89" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g id="AngryFace">
+			<path id="LeftEye" d="M357 298.5C357 271.99 359.49 250.5 386 250.5L567 369.5V420.5C567 447.01 545.51 468.5 519 468.5H405C378.49 468.5 357 447.01 357 420.5V298.5Z" fill="#BEE5E9"/>
+			<path id="RightEye" d="M914 374.139L1088.5 250C1115.56 250 1124 270.123 1124 297.435V418.546C1124 445.859 1102.06 468 1075 468H963C935.938 468 914 445.859 914 418.546V374.139Z" fill="#BEE5E9"/>
+			<path id="Angrymouth" d="M950.5 820C950.5 843.196 853.263 717.5 747.5 717.5C641.737 717.5 546.5 843.196 546.5 820C546.5 796.804 641.737 654.5 747.5 654.5C853.263 654.5 950.5 796.804 950.5 820Z" fill="#BEE5E9"/>
+			<path id="LeftEyeBrow" d="M653.823 364.064C653.823 364.064 411.849 180.781 350.674 179.332C350.674 179.332 227.9 7.53871 504.061 215.138C504.061 215.138 661.295 351.802 653.823 364.064Z" fill="#BEE5E9"/>
+			<path id="RightEyeBrow" d="M827.183 363.843C827.183 363.843 1068.46 179.644 1129.63 177.962C1129.63 177.962 1251.75 5.70426 976.379 214.35C976.379 214.35 819.664 351.61 827.183 363.843Z" fill="#BEE5E9"/>
+			</g>
+			</svg>
 
-<svg  viewBox="0 0 595.28 841.89" fill="none"  xmlns="http://www.w3.org/2000/svg">
-<g id="AngryFace">
-<path id="LeftEye" d="M357 298.5C357 271.99 359.49 250.5 386 250.5L567 369.5V420.5C567 447.01 545.51 468.5 519 468.5H405C378.49 468.5 357 447.01 357 420.5V298.5Z"/>
-<path id="RightEye" d="M914 374.139L1088.5 250C1115.56 250 1124 270.123 1124 297.435V418.546C1124 445.859 1102.06 468 1075 468H963C935.938 468 914 445.859 914 418.546V374.139Z"/>
-<path id="Angrymouth" d="M950.5 820C950.5 843.196 853.263 717.5 747.5 717.5C641.737 717.5 546.5 843.196 546.5 820C546.5 796.804 641.737 654.5 747.5 654.5C853.263 654.5 950.5 796.804 950.5 820Z"/>
-<path id="LeftEyeBrow" d="M653.823 364.064C653.823 364.064 411.849 180.781 350.674 179.332C350.674 179.332 227.9 7.53871 504.061 215.138C504.061 215.138 661.295 351.802 653.823 364.064Z"/>
-<path id="RightEyeBrow" d="M827.183 363.843C827.183 363.843 1068.46 179.644 1129.63 177.962C1129.63 177.962 1251.75 5.70426 976.379 214.35C976.379 214.35 819.664 351.61 827.183 363.843Z"/>
-</g>
-</svg>
-	
-	<!--Happy Face-->
+        <!--Happy Face-->
 
-<svg viewBox="0 0 595.28 841.89" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 595.28 841.89" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="HappyFace">
 <path id="Happylefteye" d="M317 286.5C317 247.012 349.012 215 388.5 215C427.988 215 460 247.012 460 286.5V389.5C460 428.988 427.988 461 388.5 461C349.012 461 317 428.988 317 389.5V286.5Z"/>
 <path id="Happyrighteye" d="M961 285.5C961 246.012 993.012 214 1032.5 214C1071.99 214 1104 246.012 1104 285.5V389.5C1104 428.988 1071.99 461 1032.5 461C993.012 461 961 428.988 961 389.5V285.5Z"/>
@@ -60,9 +46,9 @@
 </g>
 </svg>
 
-	<!--Sad Face-->
+        <!--Sad Face-->
 
-<svg viewBox="0 0 595.28 841.89" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 595.28 841.89" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="SadFace">
 <path id="Sadleftbrow" d="M516 148C521.42 163.031 483.835 215.789 400.637 245.79C317.438 275.791 253.919 254.667 248.499 239.637C243.079 224.606 302.242 233.65 385.441 203.649C468.64 173.649 510.58 132.969 516 148Z" />
 <path id="Sadrightbrow" d="M1230.74 237.325C1226.03 252.593 1164.27 272.136 1079.76 246.061C995.25 219.987 957.21 164.907 961.921 149.639C966.632 134.371 1008.46 177.182 1092.97 203.256C1177.48 229.33 1235.45 222.057 1230.74 237.325Z" />
@@ -71,13 +57,15 @@
 <path id="Sadmouth" d="M928 762.314C928 807.697 860.395 794.99 777 794.99C693.605 794.99 626 809.149 626 762.314C626 723.8 693.605 729.637 777 729.637C860.395 729.637 928 716.93 928 762.314Z" />
 </g>
 </svg>
-</div>
-<!--
+
+    </div>
+    <!--
 <script id="core" src="https://cdn.jsdelivr.net/kute.js/1.5.5/kute.min.js"></script>
 <script id="svg" src="https://cdn.jsdelivr.net/kute.js/1.5.5/kute-svg.min.js"></script>
 <script src="./node_module/kute.js/src/components/svgMorph.js"></script>-->
-<script src="./kute.min.js"></script>
-<script src="./kute-svg.min.js"></script>
-<script src="./animation.js"></script>
+    <script src="./kute.min.js"></script>
+    <script src="./kute-svg.min.js"></script>
+    <script src="./animation.js"></script>
 </body>
+
 </html>
