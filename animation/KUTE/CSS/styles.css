@@ -1,1 +1,31 @@
+#lefteye,
+#righteye,
+#lefteyebrow,
+#righteyebrow {
+    transform-origin: center;
+    transform-box: fill-box;
+}
 
+svg {
+    width: 430px;
+    margin: 7% 10%;
+    overflow: visible;
+}
+
+body {
+    background: #000000;
+}
+
+#angry,
+#sad,
+#happy,
+#blink {
+    display: none;
+}
+
+#NormalFace,
+#AngryFace,
+#SadFace,
+#HappyFace {
+    fill: #BEE5E9;
+}
